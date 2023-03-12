@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{customer/base::layout(~{::div})}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<section>
+<section class="slider-section">
+            <div id="main-slider" class="owl-carousel owl-theme">
+                <div class="item">
+                    <figure class="dark-theme hidden-xs">
+                        <img src="img1/slider/slider1.jpg" alt="">
+                    </figure >
+                    <figure class="dark-theme hidden-lg hidden-md hidden-sm">
+                        <img src="img1/slider/slider4.jpg" alt="">
+                    </figure >
+                    <div class="slider-section-1 text-left">
+                        <div class="container">
+                            <div class=" col-md-8 slider-box1">
+                                <div class="row">
+                                    <div class="main-slider-heading">
+                                        <h1 class="">Designer Jewellery</h1>
+                                    </div>
+                                    <div class="slider-section-1-text">
+                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,<br>lorem quis bibendum auctor elit </p>
+                                    </div>
+                                    <a href="collection-list-sidebar.html" class="itg-button mar-top20">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure class="dark-theme hidden-xs">
+                        <img src="img1/slider/slider2.jpg" alt="">
+                    </figure >
+                    <figure class="dark-theme hidden-lg hidden-md hidden-sm">
+                        <img src="img1/slider/slider5.jpg" alt="">
+                    </figure >
+                    <div class="slider-section-1 text-left">
+                        <div class="container">
+                            <div class=" col-md-8 slider-box1">
+                                <div class="row">
+                                    <div class="main-slider-heading">
+                                        <h1 class="">Designer Jewellery</h1>
+                                    </div>
+                                    <div class="slider-section-1-text">
+                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,<br>lorem quis bibendum auctor elit </p>
+                                    </div>
+                                    <a href="collection-list-sidebar.html" class="itg-button mar-top20">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure class="dark-theme hidden-xs">
+                        <img src="img1/slider/slider3.jpg" alt="">
+                    </figure >
+                    <figure class="dark-theme hidden-lg hidden-md hidden-sm">
+                        <img src="img1/slider/slider6.jpg" alt="">
+                    </figure >
+                    <div class="slider-section-1 text-left">
+                        <div class="container">
+                            <div class=" col-md-8 slider-box1">
+                                <div class="row">
+                                    <div class="main-slider-heading">
+                                        <h1 class="">Designer Jewellery</h1>
+                                    </div>
+                                    <div class="slider-section-1-text">
+                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,<br>lorem quis bibendum auctor elit </p>
+                                    </div>
+                                    <a href="collection-list-sidebar.html" class="itg-button mar-top20">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//==slider section End==//-->
+        
+        <!--//===Products-sectioon Start==//-->
+        <section>
+            <div class="products-section pad-bottom80">
+                <div class="container">
+                    <div class="row">
+                        <div class="headding-box">
+                            <h3 class="theme-headdings">Our Products</h3>
+                            <div class="headding-icons">
+                                <ul>
+                                    <li><span class="mar-top15"><i class="fa fa-diamond" aria-hidden="true"></i></span></li>
+                                    <li><span class="style mar-top15"><i class="fa fa-diamond" aria-hidden="true"></i></span></li>
+                                    <li><span class="mar-top15"><i class="fa fa-diamond" aria-hidden="true"></i></span></li>
+                                </ul>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet<br>
+                                consectetueradipiscing elit, sed diam nonummy nibh
+                            <p>
+                        </div>
+                        <div class="products mar-top40">
+                            <div class="col-md-3 col-sm-6 col-xs-12" th:each="product: ${products}">
+                                <figure class="itg-hover-style2">
+                                    <img src="img1/Products/Products1.png" alt="">
+                                    <div class="products-boxes">
+                                         <a th:href="@{/viewProductDescription{id}(id=${product.getProduct_id()})}" class="itg-button">Quick View</a>
+                                    </div>
+                                    <figcaption class=" figure-boxx figure-section-hover">
+                                        <h4 class="theme-headdings text-center pad-top10"><a href="product-detail.html" th:text="${product.getProduct_name()}"></a></h4>
+                                       
+                                        <p th:text="${product.getPrice()}" ></p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                           
+                            
+                         
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//===Products-sectioon End==//-->
+  
+        <!--//===Categories-section Start==//-->
+        <section>
+            <div class="Categories-box pad-top80">
+                <div class="container">
+                    <div class="row">
+                        <div class="headding-box">
+                            <h3 class="theme-headdings">Our Categories</h3>
+                            <div class="headding-icons">
+                                <ul>
+                                    <li><span class="mar-top15"><i class="fa fa-diamond" aria-hidden="true"></i></span></li>
+                                    <li><span class="style mar-top15"><i class="fa fa-diamond" aria-hidden="true"></i></span></li>
+                                    <li><span class="mar-top15"><i class="fa fa-diamond" aria-hidden="true"></i></span></li>
+                                </ul>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet<br>
+                                consectetueradipiscing elit, sed diam nonummy nibh
+                            <p>
+                        </div>
+                        <div class="Categories-blog pad-top40">
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <figure class="itg-hover-style1">
+                                    <img src="img1/all/categorie1.png" alt="">
+                                    <figcaption class="pad-bottom10 figure-boxx cotegories">
+                                        <h4 class="theme-headdings text-center">Necklaces And Rings</h4>
+                                        <p>View the collection</p>
+                                        <div class="categorie-text-box">
+                                            <h4><a href="collection-list-sidebar.html">Necklaces And Rings</a></h4>
+                                            <p>Lorem Ipsum is a dummy text that is mainly used by.</p>
+                                            <a href="collection-list-sidebar.html" class="itg-button mar-top20">View Shop</a>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 responsive-top">
+                                <figure class="itg-hover-style1">
+                                    <img src="img1/all/categorie2.png" alt="">
+                                    <figcaption class="pad-bottom10 figure-boxx cotegories">
+                                        <h4 class="theme-headdings text-center">Necklaces And Rings</h4>
+                                        <p>View the collection</p>
+                                        <div class="categorie-text-box">
+                                            <h4><a href="collection-list-sidebar.html">Necklaces And Rings</a></h4>
+                                            <p>Lorem Ipsum is a dummy text that is mainly used by.</p>
+                                            <a href="collection-list-sidebar.html" class="itg-button mar-top20">View Shop</a>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 Categorie-top responsive-top">
+                                <figure class="itg-hover-style1">
+                                    <img src="img1/all/categorie4.png" alt="">
+                                    <figcaption class="pad-bottom10 figure-boxx cotegories">
+                                        <h4 class="theme-headdings text-center">Necklaces And Rings</h4>
+                                        <p>View the collection</p>
+                                        <div class="categorie-text-box">
+                                            <h4><a href="collection-list-sidebar.html">Necklaces And Rings</a></h4>
+                                            <p>Lorem Ipsum is a dummy text that is mainly used by.</p>
+                                            <a href="collection-list-sidebar.html" class="itg-button mar-top20">View Shop</a>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 Categorie-top responsive-top">
+                                <figure class="itg-hover-style1">
+                                    <img src="img1/all/categorie4.png" alt="">
+                                    <figcaption class="pad-bottom10 figure-boxx cotegories">
+                                        <h4 class="theme-headdings text-center">Necklaces And Rings</h4>
+                                        <p>View the collection</p>
+                                        <div class="categorie-text-box">
+                                            <h4><a href="collection-list-sidebar.html">Necklaces And Rings</a></h4>
+                                            <p>Lorem Ipsum is a dummy text that is mainly used by.</p>
+                                            <a href="collection-list-sidebar.html" class="itg-button mar-top20">View Shop</a>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//===Categories-section End==//-->
+        
+        
+        </section>
+</body>
+</html>

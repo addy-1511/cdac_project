@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{customer/base::layout(~{::div})}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="breadcrumb-section-box">
+
+		<div
+			class="special-style special-style-full special-style-semidark col-md-12 col-md-offset-0 pull-right">
+
+			<div class="bg-image"
+				style="background-image: url('img1/all/breadcrumb-img.png');"></div>
+
+		</div>
+
+		<div class="container">
+
+			<div class="row">
+
+				<div
+					class="col-md-12 col-sm-12 pad-top100 pad-bottom100 heading-box">
+
+					<h3 class="heading-breadcrumb box-z text-center">Cart Detail</h3>
+
+					<div class="clear"></div>
+
+
+
+					<div class="breadcrumb-box">
+
+						<ul class="breadcrumb">
+
+							<li><a class="sab-heading-breadcrumb box-z"
+								href="index.html">home</a></li>
+
+							<li class="heading-wa box-z activ">Cart Detail</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="blog-griad order-box">
+
+		<div class="container">
+
+			<div class="row">
+
+
+
+				<div class="col-md-12 col-sm-12  col-xs-12 pad-bottom80"
+					style="margin-top: 20px">
+
+					<div class="clear"></div>
+
+					<div class=" hidden-xs pad-top-bottom15 order-bosx price">
+
+						<div class=" row">
+
+							<div class=" col-md-12 col-sm-12 col-xs-12 ">
+
+								<div class=" row ">
+
+									<div class="col-md-1 col-sm-1 col-xs-12 ">
+
+										<div class="text-c  order-data grey-bg text-center pad15"></div>
+
+									</div>
+
+
+									<!-- <table>
+                                        <tr th:each="product : ${products}">
+                                        <td th:text="${product.getProduct_name()}"></td>
+                                        
+                                        <td th:text="${product.getPrice()}"></td>
+                                       
+                                        </tr>
+                                        </table> -->
+
+									<!-- <div class="col-md-3 col-sm-3 col-xs-12 ">
+
+                                            <div class="text-c  order-data grey-bg text-center pad15">
+
+                                                <h4>Product</h4>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-2 col-sm-2 marB30 ">
+
+                                            <div class="text-c  order-data grey-bg text-center pad15">
+
+                                                <h4>Price</h4>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-2 col-sm-2 marB30">
+
+                                            <div class="text-c  order-data grey-bg text-center pad15">
+
+                                                <h4>Quantity</h4>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-2 col-sm-2 marB30">
+
+                                            <div class="text-c  order-data grey-bg text-center pad15">
+
+                                                <h4>Total</h4>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-1 col-sm-1 marB30">
+
+                                            <div class="text-c  order-data grey-bg text-center pad15">
+
+                                                <h4>Status</h4>
+
+                                            </div>
+
+                                        </div> -->
+
+									<div class="col-md-1 col-sm-1 col-xs-12 ">
+
+										<div class="text-c  order-data grey-bg text-center pad15"></div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+
+					<div class="row pad-bottom80">
+
+
+						<div class="col-md-12 col-sm-12 col-xs-12"
+							style="margin-top: 40px">
+
+
+							<table class="table">
+								<thead>
+									<tr>
+
+										<th>Product Image</th>
+										<th>Product Name</th>
+										<th>Product Price</th>
+										<th>Quantity</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									
+										<tr th:each="product : ${products}" >
+									
+											<td></td>
+											<td th:text="${product.getProduct_name()}"></td>
+	
+											<td th:text="${product.getPrice()}"></td>
+											<td th:each="cart : ${cartList}" >
+												<input type="number" th:value="${cart.getQuantity}">											
+											</td>
+												
+											
+											</tr>
+											
+								</tbody>
+
+							</table>
+
+
+
+
+
+
+
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-12 col-xs-12 drop-down-box ">
+
+						<div class="col-md-12 row">
+
+							<h3 class="theme-headdings line-title-box">Cart Totals</h3>
+
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="Cart-Totals-box mar-top30">
+
+							<div class="row">
+
+								<div class="col-md-12">
+
+									<div
+										class="order-data-color grey-bg text-left  order-data pad-bottom20">
+
+										<div class="row">
+
+											<strong
+												class="col-md-6 col-sm-6 col-xs-6 text-left text-cart-box">Cart
+												total</strong> <strong
+												class="col-md-6 col-sm-6 col-xs-6 text-left text-cart-box">$55.50</strong>
+
+											<div class="clear"></div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="col-md-12 marB30">
+
+									<div
+										class="order-data-color order-data grey-bg text-left pad-bottom20">
+
+										<div class="row">
+
+											<strong
+												class="col-md-6 col-sm-6 col-xs-6 text-left text-cart-box">Shipping</strong>
+											<strong
+												class="col-md-6 col-sm-6 col-xs-6 text-left text-cart-box">Free
+												Shipping</strong>
+
+											<div class="clear"></div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+
+
+								<div class="col-md-12 marB30">
+
+									<div
+										class=" order-data-color order-data grey-bg text-left pad15">
+
+										<div class="row">
+
+											<strong
+												class="col-md-6 col-sm-6 col-xs-6 text-left text-cart-box">Total
+												Order</strong> <strong
+												class="col-md-6 col-sm-6 col-xs-6 text-left text-cart-box">$40.50</strong>
+
+											<div class="clear"></div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="row pad-top20">
+
+							<div class="col-md-12">
+
+
+								<a href="#" class="itg-button pull-center blog-box">Proceed
+									To Checkout</a>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		</div>
+
+</body>
+</html>

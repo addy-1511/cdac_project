@@ -3,7 +3,7 @@
 	th:fragment="layout(content)">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+
 <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!--[if IE]>
@@ -44,10 +44,10 @@
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="row pad-top-bottom25 head-top-sec">
-                                <div class="col-md-6 col-sm-6 col-xs-12 ">
+                                <div class="col-md-12 col-sm-12 col-xs-12 ">
                                     <figure class="logo-box">
                                         <a class="" href="/Home">
-                                        <img alt=""  src="img1/logo.png"></a>
+                                        <center><img alt=""  src="img/logo-dark.png"></a></center>
                                     </figure>
                                 </div>
                                
@@ -146,7 +146,79 @@
             </div>
             <!--//==mega menu end==//-->
         </header>
-        
+                <section class="slider-section">
+            <div id="main-slider" class="owl-carousel owl-theme">
+                <div class="item">
+                    <figure class="dark-theme hidden-xs">
+                        <img src="img1/slider/slider1.jpg" alt="">
+                    </figure >
+                    <figure class="dark-theme hidden-lg hidden-md hidden-sm">
+                        <img src="img1/slider/slider4.jpg" alt="">
+                    </figure >
+                    <div class="slider-section-1 text-left">
+                        <div class="container">
+                            <div class=" col-md-8 slider-box1">
+                                <div class="row">
+                                    <div class="main-slider-heading">
+                                        <h1 class="">Divine Jewellery</h1>
+                                    </div>
+                                    <div class="slider-section-1-text">
+                                        <p>We are passionate about offering the highest quality of service and our wealth of knowledge guarantees you and your precious jewellery will be exceptionally cared for. </p>
+                                    </div>
+                                    <a href="collection-list-sidebar.html" class="itg-button mar-top20">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure class="dark-theme hidden-xs">
+                        <img src="img1/slider/slider2.jpg" alt="">
+                    </figure >
+                    <figure class="dark-theme hidden-lg hidden-md hidden-sm">
+                        <img src="img1/slider/slider5.jpg" alt="">
+                    </figure >
+                    <div class="slider-section-1 text-left">
+                        <div class="container">
+                            <div class=" col-md-8 slider-box1">
+                                <div class="row">
+                                    <div class="main-slider-heading">
+                                        <h1 class="">Divine Jewellery</h1>
+                                    </div>
+                                    <div class="slider-section-1-text">
+                                        <p>We are passionate about offering the highest quality of service and our wealth of knowledge guarantees you and your precious jewellery will be exceptionally cared for. </p>
+                                    </div>
+                                    <a href="collection-list-sidebar.html" class="itg-button mar-top20">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure class="dark-theme hidden-xs">
+                        <img src="img1/slider/slider3.jpg" alt="">
+                    </figure >
+                    <figure class="dark-theme hidden-lg hidden-md hidden-sm">
+                        <img src="img1/slider/slider6.jpg" alt="">
+                    </figure >
+                    <div class="slider-section-1 text-left">
+                        <div class="container">
+                            <div class=" col-md-8 slider-box1">
+                                <div class="row">
+                                    <div class="main-slider-heading">
+                                        <h1 class="">Divine Jewellery</h1>
+                                    </div>
+                                    <div class="slider-section-1-text">
+                                        <p>We are passionate about offering the highest quality of service and our wealth of knowledge guarantees you and your precious jewellery will be exceptionally cared for. </p>
+                                    </div>
+                                    <a href="collection-list-sidebar.html" class="itg-button mar-top20">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <div th:replace="${content}"></div>
         
@@ -157,10 +229,10 @@
                 </div>
                 <div class="container">
                     <div class="row pad-top80 pad-bottom80">
-                        <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="footer-section1">
                                 <h4 class="footer-head-line">About us</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry.</p>
+                                <p>We are passionate about offering the highest quality of service and our wealth of knowledge guarantees you and your precious jewellery will be exceptionally cared for.</p>
                                 <ul class="text-box">
                                     <li> 
                                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -177,58 +249,22 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 responsive-top">
+                        <div class="col-md-6 col-sm-6 col-xs-12 responsive-top">
                             <div class="footer-section2">
                                 <h4 class="footer-head-line">Information</h4>
                                 <ul class="footer-box2 pad-top15">
                                     <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Customer Service</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Site Map</a></li>
-                                    <li><a href="#">Advanced Search</a></li>
-                                    <li><a href="#">Orders and Returns</a></li>
+                                   
                                     <li><a href="#">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 responsive-top">
-                            <div class="footer-section2">
-                                <h4 class="footer-head-line">My Account</h4>
-                                <ul class="footer-box2 pad-top15">
-                                    <li><a href="#">Sign In</a></li>
-                                    <li><a href="#">View Cart</a></li>
-                                    <li><a href="#">My Wishlist</a></li>
-                                    <li><a href="#">Track My Order</a></li>
-                                    <li><a href="#">Private Policy</a></li>
-                                    <li><a href="#">Shipping & Returns</a></li>
-                                    <li><a href="#">Help</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 responsive-top">
-                            <div class="footer-section1">
-                                <h4 class="footer-head-line">Newsletter</h4>
-                                <p>Sign up for our mailing list to get latest updates and offers.</p>
-                                <div class="search-box-1 mar-bottom15">
-                                    <input type="text" class="search_terms" name="search" placeholder="Email address">
-                                    <button class="button-style" type="submit" value=""><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-                                </div>
-                                <p>We respect your privacy</p>
-                                <div class="icons-section">
-                                    <ul>
-                                        <li class="footer-icon-left"><a href="#" class="mini-cart-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#" class="mini-cart-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#" class="mini-cart-icon"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                                        <li><a href="#" class="mini-cart-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                        <li><a href="#" class="mini-cart-icon"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        
+                        
                     </div>
                 </div>
                 <div class="footer-bottom-bar pad-top-bottom25">
-                    <p>Copyright © 2017 Responsive  Theme - <span class="footer-text">Jewellry</span> and All Rights Reserved. Designed by  <span class="footer-text"><a href="http://itgeeksin.com/">ITGEEKS</a></span></p>
+                    <p>Copyright © 2023 Divine Jewellery- <span class="footer-text">Jewellry</span> and All Rights Reserved. Designed by  <span class="footer-text"><a href="#">ASRM</a></span></p>
                 </div>
             </div>
         </footer>

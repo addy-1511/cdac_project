@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{customer/base::layout(~{::div})}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<section>
+		<div class="breadcrumb-section-box">
+
+			<div
+				class="special-style special-style-full special-style-semidark col-md-12 col-md-offset-0 pull-right">
+
+				<div class="bg-image"
+					style="background-image: url('img1/all/breadcrumb-img.png');"></div>
+
+			</div>
+
+			<div class="container">
+
+				<div class="row">
+
+					<div
+						class="col-md-12 col-sm-12 pad-top100 pad-bottom100 heading-box">
+
+						<h3 class="heading-breadcrumb box-z text-center">User Details</h3>
+
+						<div class="clear"></div>
+
+
+
+						<div class="breadcrumb-box">
+
+							<ul class="breadcrumb">
+
+								<li><a class="sab-heading-breadcrumb box-z"
+									href="index.html">home</a></li>
+
+								<li class="heading-wa box-z activ">Account</li>
+
+							</ul>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="pad-bottom80 pad-top80 blog-griad">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<form action="/updateUser" method="post">
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4">
+
+
+
+									<label>Name</label>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+
+									<input type="text" class="form-control"
+										placeholder="Enter Name" name="name"
+										th:value="${user.getName()}">
+
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"></div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<label>Email Address</label>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+
+									<input type="email" class="form-control"
+										placeholder="Enter Email Address"
+										th:value="${user.getEmail()}" name="email">
+
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4">
+
+
+
+									<label>Contact No</label>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+
+									<input type="text" class="form-control"
+										placeholder="Enter Contact No."
+										th:value="${user.getContact_no()}" name="contact_no">
+
+								</div>
+								</div>
+								<br>
+								<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4">
+
+
+
+									<label>Address</label>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+
+									<input type="text" class="form-control"
+										placeholder="Enter Contact No."
+										th:value="${user.getAddress()}" name="address">
+
+								</div>
+								</div>
+							<br>
+							<center>
+								<button type="submit" class="itg-button ">Update</button>
+							</center>
+					</div>
+					</form>
+
+
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</section>
+</body>
+</html>
